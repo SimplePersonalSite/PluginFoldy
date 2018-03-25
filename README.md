@@ -1,12 +1,11 @@
 ## PluginInBrowserEdits
-This plugin allows you to show/hide elements in [SimplePersonalSite](https://github.com/SimplePersonalSite/SimplePersonalSite).
+This plugin allows you to show/hide elements in [SimplePersonalSiteJavaServer](https://github.com/SimplePersonalSite/SimplePersonalSiteJavaServer).
 
 ## Install
-1. follow directions to setup a [SimplePersonalSite](https://github.com/SimplePersonalSite/SimplePersonalSite).
-1. `cd` to the root directory of your site
-1. symlink `PluginFoldy.css` and `PluginFoldy.js`
+1. follow directions to setup a [SimplePersonalSiteJavaServer](https://github.com/SimplePersonalSite/SimplePersonalSiteJavaServer).
+1. symlink `PluginFoldy.css` and `PluginFoldy.js` to the plugins directory of your site
 1. include `PluginFoldy.js` as a script in `index.html` **below** `SimplePersonalSite.js`
-  - `<script src='PluginFoldy.js'></script>`
+  - `<script src='plugins/PluginFoldy.js'></script>`
 1. Tell the app to initialize the plugin by passing `PluginFoldy.plugin` to `app.run()` in `index.html`
   - if you only have one plugin, this looks like:
   - `app.run([PluginFoldy.plugin])`

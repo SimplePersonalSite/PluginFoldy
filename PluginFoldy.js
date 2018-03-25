@@ -3,7 +3,7 @@ var Foldy = Util.createSingleton('Foldy', function() {
 
 Foldy.plugin = function plugin(app) {
   setInterval(Foldy.getInstance().update.bind(Foldy.getInstance()), 200);
-  SimplePersonalSite.Util.linkCss('PluginFoldy.css');
+  SimplePersonalSite.Util.linkCss('plugins/PluginFoldy.css');
 };
 
 /**
